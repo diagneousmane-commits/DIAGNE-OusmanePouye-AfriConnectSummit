@@ -3,29 +3,141 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Accueil</title>
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="main-header">
         <nav class="navbar">
             <div class="logo">AfriConnect Summit 2026</div>
                 <ul class="nav-links">
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="programme.html">Programme</a></li>
                     <li><a href="intervenants.html">Intervenants</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
-                <div class="nav-buttons">
-                    <button id="theme-toggle" aria-label="changer de Theme">
-                        <i class="fa-solid fa-moon"></i>
-                    </button>
-                    <button class="hamburger" aria-label="Ouvrir lei menu mobile">
-                        <i class="fa-solid fa-user"></i>
-                    </button>
-                </div>
+                <div class="menu-toggle">☰</div>
         </nav>
     </header>
-    <main></main>
+    <!-- HERO INTERNE -->
+     <section class="hero small-hero">
+        <h1>Contact</h1>
+         <nav class="breadcrumb">
+      <a href="index.html">Accueil</a> &gt; <span>Contact</span>
+    </nav>
+     </section>
+
+     <main class="contact-container">
+        <!-- formulaire de contact -->
+         <form class="contactForm">
+            <div class="form-group">
+                <label for="name">Nom Complet:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+             <div class="form-group">
+                <label for="phone">Téléphone:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+             <div class="form-group">
+            <label>Type de participation</label>
+            <select id="type">
+                <option value="">Choisir</option>
+                <option>Participant</option>
+                <option>Speaker</option>
+                <option>Partenaire</option>
+            </select>
+            <small></small>
+        </div>
+
+        <div class="form-group">
+            <label>Pays</label>
+            <select id="pays">
+                <option value="">Choisir</option>
+                <option>Sénégal</option>
+                <option>Côte d’Ivoire</option>
+                <option>Maroc</option>
+                <option>Nigeria</option>
+                <option>Kenya</option>
+                <option>Ghana</option>
+                <option>Tunisie</option>
+                <option>Afrique du Sud</option>
+                <option>Mali</option>
+                <option>Cameroun</option>
+            </select>
+            <small></small>
+        </div>
+
+        <div class="form-group">
+            <label>Message / Motivation</label>
+            <textarea id="message"></textarea>
+            <small></small>
+        </div>
+
+        <button type="submit">S'inscrire</button>
+        <p id="successMessage"></p>
+
+    </form>
+
+    <!-- INFOS -->
+    <div class="contact-info">
+        <h3>Informations</h3>
+        <p>📍 Dakar, Sénégal</p>
+        <p>📧 contact@africonnect.com</p>
+        <p>📞 +221 77 000 00 00</p>
+    </div>
+
+</main>
+
+<!-- FAQ -->
+<section class="faq">
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q1">
+        <label for="q1">Comment s'inscrire ?</label>
+        <p>Remplissez le formulaire ci-dessus.</p>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q2">
+        <label for="q2">L'événement est-il payant ?</label>
+        <p>Certaines sessions sont gratuites.</p>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q3">
+        <label for="q3">Puis-je devenir intervenants ?</label>
+        <p>Oui, sélectionnez "Intervenants".</p>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q4">
+        <label for="q4">Lieu de l'événement ?</label>
+        <p>Dakar, Sénégal.</p>
+    </div>
+
+    <div class="faq-item">
+        <input type="checkbox" id="q5">
+        <label for="q5">Contact support ?</label>
+        <p>Email ou téléphone disponibles.</p>
+    </div>
+</section>
+
+<!-- MAP -->
+<section class="map">
+    <iframe src=""></iframe>
+</section>
+         </form>
+     </main>
     <footer></footer>
+    <script src="js/main.js"></script>
 </body>
 </html>
